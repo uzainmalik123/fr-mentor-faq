@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-light-pink: hsl(275, 100%, 97%);
+    --color-grayish-purple: hsl(292, 16%, 49%);
+    --color-dark-purple: hsl(292, 42%, 14%);
+
+    --font-family-work-sans: "Work Sans", serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--color-light-pink);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+    position: relative;
+}
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-position: bottom;
+}
+section {
+    position: absolute;
+    top: 10rem;
+    display: flex;
+    max-width: 520px;
+    padding: 2.25rem 2rem;
+    background-color: #fff;
+    z-index: 1;
+    border: none;
+    border-radius: 14px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.heading h1 {
+    font-family: var(--font-family-work-sans);
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: var(--color-dark-purple);
+}
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-top: 1px solid var(--color-light-pink);
+    padding-top: 1.5rem;
+}
+.questions p {
+    font-family: var(--font-family-work-sans);
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--color-grayish-purple);
+    display: none;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.head h2 {
+    font-family: var(--font-family-work-sans);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--color-dark-purple);
+}
+.head img {
+    cursor: pointer;
+}
