@@ -23,6 +23,7 @@ main {
     width: 100%;
     height: 100dvh;
     position: relative;
+    padding-bottom: 5rem;
 }
 main::before {
     content: "";
