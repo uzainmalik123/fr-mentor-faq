@@ -4,6 +4,7 @@
     --color-light-pink: hsl(275, 100%, 97%);
     --color-grayish-purple: hsl(292, 16%, 49%);
     --color-dark-purple: hsl(292, 42%, 14%);
+    --color-purple-hover: #A726E2;
 
     --font-family-work-sans: "Work Sans", serif;
 }
@@ -37,7 +38,7 @@ section {
     position: absolute;
     top: 10rem;
     display: flex;
-    max-width: 520px;
+    max-width: 540px;
     padding: 2.25rem 2rem;
     background-color: #fff;
     z-index: 1;
@@ -75,6 +76,7 @@ section {
     line-height: 1.5rem;
     color: var(--color-grayish-purple);
     display: none;
+    max-width: 470px;
 }
 .head {
     display: flex;
@@ -84,10 +86,19 @@ section {
 }
 .head h2 {
     font-family: var(--font-family-work-sans);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.05rem;
     color: var(--color-dark-purple);
+    transition: 0.5s all;
+}
+.head h2:hover {
+    cursor: pointer;
+    color: var(--color-purple-hover);
+    transition: 0.5s all;
 }
 .head img {
     cursor: pointer;
+}
+.icon-minus {
+    display: none;
 }
